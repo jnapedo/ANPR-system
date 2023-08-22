@@ -1,0 +1,37 @@
+from launcher.ui_launcher import Ui_MainWindow
+
+class Splash_screen(QMainWindow):
+    def __init__(self, **kwargs):
+        QMainWindow.__init__(self, **kwargs)
+        self.ui_splash = Ui_MainWindow()
+        self.ui_splash.setupUi(self)
+        self.setWindowFlags(QtCore.Qt.FramelessWindowHint)
+        self.setAttribute(QtCore.Qt.WA_TranslucentBackground)
+
+        self.shadow = QGraphicsDropShadowEffect(self)
+        self.shadow.setBlurRadius(20)
+        self.shadow.setXOffset(0)
+        self.shadow.setYOffset(0)
+        self.shadow.setColor(QColor(0, 0, 0, 70))
+        self.ui_splash.main.setGraphicsEffect(self.shadow)
+        self.create_program_data_dir()
+        self.timer = QtCore.QTimer(self)
+        self.timer.timeout.connect(self.progress)
+        self.timer.start(40)
+        self.show()
+
+
+    def progress(self):
+        global counter
+        self.ui_splash.progressBar.setValue(counter)
+        if counter > 100:
+            self.timer.stop()
+            self.close()  
+            self.main = MainWindow()
+            self.main.show()        
+        counter +=1
+
+if __name__ == '__main__':
+    application = QApplication(sys.argv)
+    window = Splash_screen()  
+    sys.exit(application.exec_()) 

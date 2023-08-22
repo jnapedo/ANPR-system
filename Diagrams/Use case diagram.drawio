@@ -1,0 +1,142 @@
+<mxfile host="Electron" modified="2023-08-18T16:51:46.251Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.5 Chrome/114.0.5735.243 Electron/25.3.1 Safari/537.36" etag="47Vrc9uWh-6ATHzbPs1q" version="21.6.5" type="device">
+  <diagram name="Page-1" id="6dTHP2GeYUYsci8ma-Og">
+    <mxGraphModel dx="864" dy="516" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <object label="" id="0">
+          <mxCell />
+        </object>
+        <mxCell id="1" parent="0" />
+        <mxCell id="qAvqyUgwUYClQggwhjc_-1" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;labelBorderColor=none;align=center;" parent="1" vertex="1">
+          <mxGeometry x="60" y="110" width="20" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="qAvqyUgwUYClQggwhjc_-2" value="System&lt;br&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;labelBorderColor=none;fontStyle=0;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="720" y="250" width="30" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="qAvqyUgwUYClQggwhjc_-3" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="140" as="sourcePoint" />
+            <mxPoint x="280" y="60" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="baypr_oswM3HQ744GIWe-1" value="camera" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="370" width="20" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="baypr_oswM3HQ744GIWe-2" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="baypr_oswM3HQ744GIWe-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="70" y="410" as="sourcePoint" />
+            <mxPoint x="180" y="370" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="90" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="baypr_oswM3HQ744GIWe-3" value="draws contours for plate region of interest" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="120" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="baypr_oswM3HQ744GIWe-4" value="if plate id is not found in database, displays plate id not found" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="470" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="baypr_oswM3HQ744GIWe-5" value="Clicks disconnect button to deactivate camera" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="160" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="baypr_oswM3HQ744GIWe-6" value="captures image" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="330" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="baypr_oswM3HQ744GIWe-7" value="Clicks connect button to start system" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="260" y="30" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="baypr_oswM3HQ744GIWe-8" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.058;entryY=0.7;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="baypr_oswM3HQ744GIWe-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="70" y="190" as="sourcePoint" />
+            <mxPoint x="120" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="baypr_oswM3HQ744GIWe-10" value="activates camera" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="445" y="60" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="baypr_oswM3HQ744GIWe-11" value="sharpens immage and applies grayscale" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="180" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="baypr_oswM3HQ744GIWe-12" value="extracts characters from region of interest" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="240" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="baypr_oswM3HQ744GIWe-13" value="displays extracted characters of plate id to the user" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="445" y="295" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="baypr_oswM3HQ744GIWe-14" value="queries database for plate id information/details" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="350" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="baypr_oswM3HQ744GIWe-15" value="if plate id is found in database, displays plate id details and give a beeb sound&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="410" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="baypr_oswM3HQ744GIWe-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.467;exitY=0.679;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="qAvqyUgwUYClQggwhjc_-2" target="baypr_oswM3HQ744GIWe-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="630" y="440" as="sourcePoint" />
+            <mxPoint x="680" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="baypr_oswM3HQ744GIWe-18" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.367;exitY=0.564;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="qAvqyUgwUYClQggwhjc_-2" target="baypr_oswM3HQ744GIWe-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="610" y="380" as="sourcePoint" />
+            <mxPoint x="660" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="baypr_oswM3HQ744GIWe-19" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="qAvqyUgwUYClQggwhjc_-2" target="baypr_oswM3HQ744GIWe-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="610" y="360" as="sourcePoint" />
+            <mxPoint x="660" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="baypr_oswM3HQ744GIWe-20" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="qAvqyUgwUYClQggwhjc_-2" target="baypr_oswM3HQ744GIWe-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="320" as="sourcePoint" />
+            <mxPoint x="650" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="baypr_oswM3HQ744GIWe-21" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=0.1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="qAvqyUgwUYClQggwhjc_-2" target="baypr_oswM3HQ744GIWe-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="300" as="sourcePoint" />
+            <mxPoint x="650" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="baypr_oswM3HQ744GIWe-22" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=0.1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="qAvqyUgwUYClQggwhjc_-2" target="baypr_oswM3HQ744GIWe-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="595" y="230" as="sourcePoint" />
+            <mxPoint x="645" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="baypr_oswM3HQ744GIWe-23" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.967;entryY=0.6;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="qAvqyUgwUYClQggwhjc_-2" target="baypr_oswM3HQ744GIWe-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="635" y="169.99727272727273" as="sourcePoint" />
+            <mxPoint x="595" y="97.27" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="baypr_oswM3HQ744GIWe-27" value="extends" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="baypr_oswM3HQ744GIWe-3">
+          <mxGeometry x="0.0167" y="14" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="270" y="340" as="sourcePoint" />
+            <mxPoint x="320" y="290" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="360" y="240" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="baypr_oswM3HQ744GIWe-28" value="extends" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=1.007;exitY=0.683;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="baypr_oswM3HQ744GIWe-4">
+          <mxGeometry x="-0.3614" y="11" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="485" y="525" as="sourcePoint" />
+            <mxPoint x="535" y="475" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="baypr_oswM3HQ744GIWe-29" value="extends" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="baypr_oswM3HQ744GIWe-7" target="baypr_oswM3HQ744GIWe-10">
+          <mxGeometry x="0.3267" y="8" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="395" y="120" as="sourcePoint" />
+            <mxPoint x="445" y="70" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
